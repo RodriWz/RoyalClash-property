@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap");
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif
+}
+
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+/* CSS VARIABEL */
+:root {
+  --primary-color: #A0522D;        /* Sienna */
+  --link-color: #2E8B57;           /* SeaGreen */
+  --btn-hover-color: #DAA520;      /* GoldenRod */
+  --lg-heading: #3E2723;           /* Dark Brown */
+  --text-content: #4E4E4E;         /* Neutral Gray */
+  --fixed-header-height: 7rem;
+  --c-white: #FDF6EC;              /* Cream White */
+  --c-black: #1C1C1C;              /* Deep Charcoal */
+  --c-titan-white: #F5F5F5;        /* Soft Gray */
+  --c-cold-purple: #B0AFAF;        /* Muted Mauve */
+  --c-indigo: #7E8B94;             /* Dusty Indigo */
+  --c-governor: #8E7C62;           /* Taupe */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--c-white);
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    list-style-type: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container{
+    width: 100%;
+}
+
+/* header */
+.header{
+    height: var(--fixed-header-height);
+    padding: 25px 4rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--c-white);
+    max-width: 100% !important;
+}
+
+.shadow-header {
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+  border-bottom: 1px solid #eee;
+}
+
+/* navbar */
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
