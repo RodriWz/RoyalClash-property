@@ -8,7 +8,9 @@
 }
 
 *,
-*::before *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -131,7 +133,7 @@ button {
   display: none;
 }
 
-show {
+.show {
   right: 3% !important;
 }
 
@@ -319,7 +321,7 @@ show {
     color: #000;
   }
   .wrapper-home {
-    padding: 0 0.7 rem;
+    padding: 0 0.7rem;
   }
   .grid_item-1 {
     padding-left: 0rem;
