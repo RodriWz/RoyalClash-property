@@ -8,7 +8,6 @@
 }
 
 *,
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -17,10 +16,10 @@
 /* CSS VARIABEL */
 :root {
   --primary-color: #a0522d; /* Sienna */
-  --link-color: #2e8b57; /* SeaGreen */
+  --link-color: #ff7300; /* SeaGreen */
   --btn-hover-color: #daa520; /* GoldenRod */
   --lg-heading: #3e2723; /* Dark Brown */
-  --text-content: #4e4e4e; /* Neutral Gray */
+  --text-content: #4e4e4e; /* NeuPtral Gray */
   --fixed-header-height: 7rem;
   --c-white: #fdf6ec; /* Cream White */
   --c-black: #1c1c1c; /* Deep Charcoal */
@@ -91,9 +90,10 @@ button {
 }
 
 #black-title {
-  color: #4e4e4e;
+  color: #000000;
   font-weight: 300;
 }
+
 /* nav menu */
 .nav_menu_list {
   display: flex;
@@ -122,7 +122,7 @@ button {
 }
 
 .toggle_btn {
-  font: size 20px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--lg-heading);
   z-index: 4;
@@ -207,14 +207,14 @@ button {
 }
 
 .view_more_btn {
-  width: 100px;
+  width: 180px;
   height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   letter-spacing: 0;
-  color: #eee;
+  color: #ffffff;
   font-weight: 500;
   margin-right: 10px;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -269,6 +269,19 @@ button {
   justify-content: center;
   align-items: center;
   color: var(--c-white);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  text-align: center;
+  color: #eee;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
 }
 
 /* Media Query */
@@ -341,5 +354,55 @@ button {
   .featured_info p {
     line-height: 23px;
     font-size: 140px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper-home {
+    padding-top: 3rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .grid-item-1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .main-heading {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .info-text {
+    font-size: 16px;
+    text-align: center;
+    padding: 0, 7rem;
+  }
+  .btn_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item-2 {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team_img_wrapper {
+    width: 350px;
+    height: 350px;
+  }
+  .featured_info span {
+    font-size: 19px;
+  }
+  .house-listing {
+    width: 100%;
   }
 }
